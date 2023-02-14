@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 150px 300px 150px;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 20px;
+}
+
+.nav-bar {
+  display: flex;
+  border-bottom: 1px solid;
+  border-color: hsl(220, 14%, 84%);
+}
+.menu {
+  display: none;
+}
+.first-half {
+  width: 88%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.sneaker {
+  margin: 0 10px 0 10px;
+  margin-right: 150px;
+}
+
+.second-half {
+  width: 10%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart {
+  width: 50px;
+  height: 50px;
+}
+.cart img {
+  width: 100%;
+}
+.avatar {
+  width: 40px;
+  height: 40px;
+}
+.avatar img {
+  width: 100%;
+}
+.links a {
+  padding: 10px 10px 10px 10px;
+  text-decoration: none;
+  color: black;
+}
+.cart {
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    border: none;
+    padding: 0 0 0 0;
+  }
+  .links {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  body {
+    padding: 0 0 0 0;
+  }
+  .second-half {
+    width: 100px;
+  }
+  .avatar {
+    margin-right: 10px;
+  }
+}
